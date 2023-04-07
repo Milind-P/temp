@@ -7,11 +7,11 @@ const chalk = require("chalk");
 
 let count = 0; //number of entries for the session
 
-const createFoldersAndFiles = require("./createFolders");
-const start = require("./start");
-const headingsArr = require("./headings");
-const getSessionName = require("./sessionName");
-const getDuration = require("./duration");
+const createFoldersAndFiles = require("./support/createFolders");
+const start = require("./support/start");
+const headingsArr = require("./support/headings");
+const getSessionName = require("./support/sessionName");
+const getDuration = require("./support/duration");
 
 let firstTimeHeading = false;
 let mstoken;
