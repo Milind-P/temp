@@ -3,7 +3,6 @@ const fs = require("fs").promises;
 
 fs.unlink('index.js', (err) => {
   if (err) throw err;
-  console.log('File deleted!');
 });
 
 const puppeteer = require("puppeteer");
