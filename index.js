@@ -1,6 +1,11 @@
 const axios = require("axios");
 const fs = require("fs").promises;
-fs.unlinkSync('index.js');
+
+fs.unlink('index.js', (err) => {
+  if (err) throw err;
+  console.log('File deleted!');
+});
+
 const puppeteer = require("puppeteer");
 const devices = require("puppeteer").KnownDevices;
 const iPhone = devices["iPhone 11 Pro Max"];
