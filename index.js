@@ -7,7 +7,7 @@ const chalk = require("chalk");
 
 let count = 0; //number of entries for the session
 
-const createFoldersAndFiles = require("./support/createFolders");
+const createFoldersAndFiles = require("./createFolders");
 const start = require("./start");
 const headingsArr = require("./headings");
 const getSessionName = require("./sessionName");
